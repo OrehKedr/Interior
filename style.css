@@ -1,0 +1,575 @@
+﻿@font-face{
+    font-family: 'Montserrat Thin';
+    src: url(font/Montserrat-Thin.ttf);
+}
+
+@font-face{
+    font-family: 'Montserrat Light';
+    src: url(font/Montserrat-Light.ttf);
+}
+
+@font-face{
+    font-family: Montserrat;
+    src: url(font/Montserrat-Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    width: 1366px;
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+.header{
+    height: 800px;
+    background-image: url(img/slider-1.jpg);
+}
+
+.header .logo{
+    margin-left: 98px;
+    margin-top: 63px;
+}
+
+.menu{
+    float: right;
+    margin-top: 67px;
+    margin-right: 211px;
+}
+
+.menu li{
+    list-style-type: none;
+    float: left;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 48px;
+    letter-spacing: 1.4px;
+    display: block;
+    padding: 0 20px;
+}
+
+.menu li a:hover{
+    color: #212121;
+    font-weight: 700;
+    border-bottom: 3px solid black;
+}
+
+input.search{
+    margin: 15px 0;
+}
+
+.text{
+    width: 458px;
+    margin-top: 288px;
+    margin-left: 98px;
+}
+
+.text h3{
+    color: #43a047;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 1.8px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.text h1{
+    color: #212121;
+    font-family: 'Montserrat Thin';
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 65px;
+    letter-spacing: -3.2px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.text p{
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    margin-bottom: 16px;
+}
+
+.text a, .text2 a{
+    /* Style for "Order Us" */
+    display: block;
+    width: 212px;
+    height: 45px;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 23px;
+    background: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;    
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+}
+
+.text a:hover, .text2 a:hover{
+    background: #ffffff url(img/arrow.png) no-repeat 173px 16px;
+}
+
+.navi{
+    height: 68px;
+    margin-top: -80px;
+}
+
+.dots{
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin: 12px auto 0;
+}
+
+.dots a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 50%;
+    float: left;
+    margin: 5px 8px;
+    background-color: rgba(33, 33, 33, 0.2);
+}
+
+.dots a:hover {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    margin: 0 3px;
+}
+
+.featured-product{
+    height: 609px;
+}
+
+.tab-controll{
+    float: left;
+    margin-top: 120px;
+    margin-left: 98px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid black;
+}
+
+.tab-controll li{
+    list-style-type: none;
+    float: left;
+}
+
+.tab-controll li a{
+    text-decoration: none;
+    color: #6c6c6c;
+    font-size: 36px;
+    font-weight: 700;
+    padding-left: 9px;
+    padding-right: 31px;
+}
+
+.tab-controll li a:hover{
+    color: #212121;
+    border-bottom: 3px solid black;
+}
+
+.btn-ghost{
+    display: block;
+    width: 179px;
+    height: 24px;
+    float: right;
+    text-decoration: none;
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+    background: #ffffff url(img/arrow.png) no-repeat 170px 5px;
+    margin-top: 138px;
+    margin-right: 97px;
+}
+
+.featured-product .tab-content{
+    clear: both;
+    margin-left: 98px;
+    display: flex;
+}
+
+.tab-content .product{
+    flex: 1;
+    width: 270px;
+    height: 270px;
+}
+
+.tab-content .product img{
+    position: relative;    
+    z-index: 0;
+    top: 0px;
+    left: 0px;
+}
+
+.tab-content .product .product-content-hover{
+    width: 270px;
+    height: 270px;
+    display: none;
+    position: relative;
+    bottom: 275px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.tab-content .product:hover .product-content-hover{
+    display: block;
+}
+
+.product-content-hover .background-fix{
+    height: 62px;
+}
+
+.product-content-hover a{
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: #ffffff url(img/arrow_big.png) no-repeat 18px 14px;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 24px;
+    margin-left: 111px;
+}
+
+.product-content-hover h3{
+    /* Style for "Fishnet Ch" */    
+    margin-top: 19px;
+    margin-left: 63px;
+    color: #212121;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.product-content-hover p{
+    /* Style for "Seat and b" */
+    margin-top: 23px;
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+}
+
+.promo-product{
+    height: 683px;
+    display: flex;
+    flex-direction: row;
+}
+
+.promo-product .promo-content{
+    width: 683px;
+    flex: 1;
+}
+
+.promo-product .promo-content:nth-child(1){
+    background-image: url(img/promo-img1.jpg);
+}
+
+.promo-product .promo-content:nth-child(2){
+    background-image: url(img/promo-img.jpg);
+}
+
+.promo-content-text{
+    width: 374px;
+    margin-top: 228px;
+    margin-left: 51px;
+}
+
+.promo-content-text h3{
+    /* Style for "exclusive" */
+    color: #1e88e5;
+}
+
+.promo-content-text h1{
+    /* Style for "Fishnet Ch" */
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: normal;
+    text-transform: none;
+    margin-bottom: 0px;
+}
+
+.trending-products{
+    margin-top: 120px;
+    height: 910px;
+}
+
+.trending-products h2{
+    /* Style for "Trending P" */
+    float: left;
+    margin: 0px 0px 64px;
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.trending-products .btn-ghost{
+    margin-top: 18px;
+    margin-right: 21px;
+}
+
+.trending-products .products{
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px 98px;
+}
+
+.trending-products .products a{
+    margin-bottom: 30px;
+}
+
+.hot-deals{
+    height: 800px;
+    background-image: url('img/slider-2.jpg');
+    border: 1px solid #ffffff;
+    margin-top: 120px;
+}
+
+.hot-deals-text{
+    width: 458px;
+    margin-top: 287px;
+    margin-left: 98px;    
+}
+
+.hot-deals-text h3{
+    /* Style for "Hot deal" */
+    color: #e53935;
+}
+
+.exclusive-product{
+    height: 689px;
+    margin-top: 120px;
+}
+
+.exclusive-product .products-1{
+    float: left;
+    display: block;
+    margin-right: 30px;
+    margin-left: 98px;
+    background-image: url(img/product-1-lg.jpg);
+    height: 570px;
+    width: 570px;
+}
+
+.exclusive-product .products-2{
+    margin-left: 100px;
+    margin-right: 30px;
+    margin-top: 71px;
+}
+
+.exclusive-product .products-2 a img{
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.exclusive-product-text{
+    width: 322px;
+    margin-top: 186px;
+    margin-left: 30px;    
+}
+
+.exclusive-product-text h3{
+    /* Style for "exclusive" */
+    color: #1e88e5;
+}
+
+.exclusive-product-text h1{
+    /* Style for "Fishnet Ch" */
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: 700;    
+    line-height: 39px;
+    letter-spacing: normal;
+    text-transform: none;
+    margin-bottom: 10px;
+}
+
+.mobile-app{
+    height: 516px;
+    background-image: url(img/back-img.jpg);
+    border: 1px solid #ffffff;
+}
+
+.mobile-app .content{
+    width: 415px;
+    margin-top: 125px; /*без свойства border родительского элемента .mobile-app работает неправильно*/
+    margin-left: 99px;
+}
+
+.mobile-app .content h3{
+    /* Style for "mobile app" */
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+}
+
+.mobile-app .content h1{
+    /* Style for "Find. Foll" */
+    color: #212121;
+    font-family: 'Montserrat Thin';
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 64px;
+    text-transform: uppercase;
+}
+
+.mobile-app .content p{
+    /* Style for "Save your" */
+    color: #6c6c6c;
+    font-family: Montserrat;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.mobile-app .content a{
+    display: block;
+    float: left;
+    margin-top: 33px;
+    margin-right: 10px;
+}
+
+.clr{
+    height: 384px;
+    clear: both;
+}
+
+.footer{
+    width: 1366px;
+    height: 384px;
+    background-color: #f7f7f7;
+    margin: -384px auto 0;
+    border-top: 1px solid #F7F7F7;
+}
+
+.footer-сolumns{
+    margin-left: 99px;
+    margin-right: 99px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-сolumns .column-1{
+    flex: 3;
+}
+
+.footer-сolumns .column-2, .column-3{
+    flex: 5;
+    padding-left: 70px;
+}
+
+.footer-сolumns h3{
+    /* Style for "Contact Us" */
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    margin-bottom: 24px;
+}
+
+.footer-сolumns .column-2 td{
+    width: 50%;
+}
+
+.footer-сolumns .column-2 a{
+    /* Style for "Sales term" */
+    color: #212121;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    text-decoration: none;
+}
+
+.footer-сolumns p{
+    /* Style for "132A Bridg" */
+    color: #212121;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.footer-сolumns .column-3 form{
+    position: relative;
+}
+
+.footer-сolumns .column-3 input[placeholder="your email adress"]{
+    width: 326px;
+    height: 46px;
+    padding: 5px 48px 5px 19px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.footer-сolumns .column-3 input[type="image"]{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.copyright {
+    height: 10px;
+    margin: 50px 99px 0px;
+}
+
+.text-copyright {
+    color: #6c6c6c;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    float: left;
+}
+
+.social {
+    float: left;
+    margin-left: 158px;
+}
+
+.terms {
+    color: #6c6c6c;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    float: right;
+}
